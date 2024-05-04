@@ -20,9 +20,7 @@
     "@next/third-parties": "^14.2.3",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "react-image-magnifiers": "^1.4.0",
-    "react-image-magnify": "^2.7.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

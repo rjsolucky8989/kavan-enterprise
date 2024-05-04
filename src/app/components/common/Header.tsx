@@ -15,6 +15,11 @@ export function Header() {
       href: "/product/diya-making-machine",
       isActive: pathName.includes("product/diya-making-machine") ? true : false,
     },
+    {
+      name: "Diya",
+      href: "/product/diya",
+      isActive: pathName.includes("product/diya") ? true : false,
+    },
   ];
   return (
     <nav className="w-full light py-3 bg-[#F0F3F5] dark:bg-[#0b1727] text-zinc-900 dark:text-white relative ">

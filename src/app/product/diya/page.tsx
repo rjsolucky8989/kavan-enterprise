@@ -1,7 +1,5 @@
 "use client";
 import React, { Fragment, useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
-import ImageZoomLens from '../../components/common/ImageZoomLens';
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,6 +19,9 @@ import {
   faHeart,
 } from "@fortawesome/free-regular-svg-icons";
 import { Table } from "@mui/material";
+import ImageMagnifier from "@/app/components/common/ImageMagnifier";
+import { Header } from "@/app/components/common/Header";
+import { Footer } from "@/app/components/common/Footer";
 
 const coupons = [{ label: "Min. spend ৳ 5,000. Capped at ৳ 1,250." }];
 
@@ -87,7 +88,7 @@ const ProductPreviews : React.FC<any> = ({previews}) => {
 	return (
 		<div className="xl:mr-6">
 			<div className="text-center p-1 mb-2">
-        <div >
+        {/* <div >
           <ReactImageMagnify
               {...{
                 smallImage: {
@@ -104,13 +105,13 @@ const ProductPreviews : React.FC<any> = ({previews}) => {
                 enlargedImagePosition: 'over',
                 isHintEnabled: true
               }}
-            />
-				{/* <img
+            /> */}
+				<ImageMagnifier
 					src={previews[index].previewUrl}
-					alt=""
-					className="max-w-full h-auto rounded-xl w-full"
-				/> */}
-        </div>
+          width={0}
+          height={450}
+				/>
+        {/* </div> */}
 			</div>
 			<hr className="dark:border-slate-700 my-4 mx-1" />
 			<ul className="flex gap-3">
@@ -387,6 +388,9 @@ const Diya = () => {
   };
 
   return (
+    <>
+    <div className="wrapper">
+    <Header />
     <section className="py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-12 gap-6">
@@ -533,6 +537,9 @@ const Diya = () => {
         </div>
       </div>
     </section>
+    </div>
+    <Footer />
+    </>
   );
 };
 
