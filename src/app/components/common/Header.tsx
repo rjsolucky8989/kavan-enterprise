@@ -77,7 +77,9 @@ export function Header() {
                         : "opacity-50 hover:opacity-100"
                     }`}
                   >
-                    <Link href={route.href}>{route.name}</Link>
+                    <Link rel="canonical" href={route.href}>
+                      {route.name}
+                    </Link>
                   </li>
                 );
               })}
