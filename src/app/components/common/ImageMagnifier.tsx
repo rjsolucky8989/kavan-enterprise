@@ -16,7 +16,7 @@ const ImageMagnifier: React.FC<{
   height,
   magnifierHeight = 300,
   magnifieWidth = 300,
-  zoomLevel = 3,
+  zoomLevel = 2,
 }) => {
   const [[x, y], setXY] = useState([0, 0]);
   const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
@@ -26,14 +26,14 @@ const ImageMagnifier: React.FC<{
       style={{
         position: "relative",
         height: height,
-        width: width,
+        width: "100%",
       }}
     >
       <Image
         src={src}
-        height={height}
-        width={width}
-        style={{ height: height, width: width }}
+        alt="image"
+        fill
+        style={{ objectFit: "fill" }}
         onMouseEnter={(e) => {
           // update image size and turn-on magnifier
           const elem = e.currentTarget;
@@ -55,7 +55,6 @@ const ImageMagnifier: React.FC<{
           // close magnifier
           setShowMagnifier(false);
         }}
-        alt={"img"}
       />
 
       <div
