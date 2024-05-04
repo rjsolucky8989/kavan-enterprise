@@ -11,9 +11,9 @@ export const DiyaMakingMachine = () => {
             <div className="grid grid-cols-12 gap-6">
               <div className="col-span-12 lg:col-span-6">
                 <ImageMagnifier
-                  width="100%"
+                  width={350}
                   src="/diya-making-machine-1.jpeg"
-                  height="500px"
+                  height={500}
                 />
               </div>
               <div className="col-span-12 lg:col-span-6">

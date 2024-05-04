@@ -1,11 +1,12 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 /* eslint-disable @next/next/no-img-element */
 const ImageMagnifier: React.FC<{
   src: string;
-  width?: string;
-  height?: string;
+  width: number;
+  height: number;
   magnifierHeight?: number;
   magnifieWidth?: number;
   zoomLevel?: number;
@@ -28,8 +29,10 @@ const ImageMagnifier: React.FC<{
         width: width,
       }}
     >
-      <img
+      <Image
         src={src}
+        height={height}
+        width={width}
         style={{ height: height, width: width }}
         onMouseEnter={(e) => {
           // update image size and turn-on magnifier
