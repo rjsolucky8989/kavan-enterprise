@@ -120,6 +120,15 @@ export const Footer = () => {
                     Diya Making Machine
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="text-gray-700 transition hover:text-gray-700/75"
+                    href="/product/diya"
+                    rel="canonical"
+                  >
+                    Mitti Diya
+                  </Link>
+                </li>
               </ul>
             </div>
 

@@ -16,7 +16,7 @@ export function Header() {
       isActive: pathName.includes("product/diya-making-machine") ? true : false,
     },
     {
-      name: "Diya",
+      name: "Mitti Diya",
       href: "/product/diya",
       isActive: pathName.includes("product/diya") ? true : false,
     },
