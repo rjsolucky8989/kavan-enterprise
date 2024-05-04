@@ -1,5 +1,7 @@
 "use client";
 import React, { Fragment, useState } from "react";
+import ReactImageMagnify from "react-image-magnify";
+import ImageZoomLens from '../../components/common/ImageZoomLens';
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -79,36 +81,55 @@ const product = {
   ],
 };
 
-const ProductPreviews: React.FC<any> = ({ previews }) => {
-  const [index, setIndex] = useState(0);
+const ProductPreviews : React.FC<any> = ({previews}) => {
+	const [index, setIndex] = useState(0);
 
-  return (
-    <div className="xl:mr-6">
-      <div className="text-center p-1 mb-2">
-        <img
-          src={previews[index].previewUrl}
-          alt=""
-          className="max-w-full h-auto rounded-xl w-full"
-        />
-      </div>
-      <hr className="dark:border-slate-700 my-4 mx-1" />
-      <ul className="flex gap-3">
-        {previews.map((preview: any, i: any) => (
-          <li
-            className="w-24 h-24 rounded-md cursor-pointer"
-            key={i}
-            onClick={() => setIndex(i)}
-          >
-            <img
-              src={preview.thumbUrl}
-              alt=""
-              className="max-w-full h-auto rounded-md"
+	return (
+		<div className="xl:mr-6">
+			<div className="text-center p-1 mb-2">
+        <div >
+          <ReactImageMagnify
+              {...{
+                smallImage: {
+                  alt: "Diya",
+                  isFluidWidth: true,
+                  src: previews[index].previewUrl,
+                },
+                largeImage: {
+                  alt: "",
+                  src: previews[index].previewUrl,
+                  width: 1000,
+                  height: 1000
+                },
+                enlargedImagePosition: 'over',
+                isHintEnabled: true
+              }}
             />
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+				{/* <img
+					src={previews[index].previewUrl}
+					alt=""
+					className="max-w-full h-auto rounded-xl w-full"
+				/> */}
+        </div>
+			</div>
+			<hr className="dark:border-slate-700 my-4 mx-1" />
+			<ul className="flex gap-3">
+				{previews.map((preview : any, i : any) => (
+					<li
+						className="w-24 h-24 rounded-md cursor-pointer"
+						key={i}
+						onClick={() => setIndex(i)}
+					>
+						<img
+							src={preview.thumbUrl}
+							alt=""
+							className="max-w-full h-auto rounded-md"
+						/>
+					</li>
+				))}
+			</ul>
+		</div>
+	);
 };
 
 ProductPreviews.propTypes = {
