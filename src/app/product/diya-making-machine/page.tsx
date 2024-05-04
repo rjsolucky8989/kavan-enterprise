@@ -1,5 +1,6 @@
 import { Footer } from "@/app/components/common/Footer";
 import { Header } from "@/app/components/common/Header";
+import { DiyaMakingMachine } from "@/app/components/product/DiyaMakingMachine";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Diya Making Machine | Kavan Enterprise",
@@ -13,15 +14,14 @@ export const metadata: Metadata = {
   ],
 };
 
-const DiyaMakingMachine = () => {
+const DiyaMakingMachinePage = () => {
   return (
     <>
       <Header></Header>
-      <h1>Diya Making Machine</h1>
-      <h1>Buy now</h1>
+      <DiyaMakingMachine />
       <Footer />
     </>
   );
 };
 
-export default DiyaMakingMachine;
+export default DiyaMakingMachinePage;
