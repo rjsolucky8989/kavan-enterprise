@@ -23,7 +23,7 @@ import ImageMagnifier from "@/app/components/common/ImageMagnifier";
 import { Header } from "@/app/components/common/Header";
 import { Footer } from "@/app/components/common/Footer";
 
-const coupons = [{ label: "Min. spend ৳ 5,000. Capped at ৳ 1,250." }];
+const coupons = [{ label: "Min. spend ₹ 5,000. Capped at ₹ 1,250." }];
 
 const product = {
   title:
