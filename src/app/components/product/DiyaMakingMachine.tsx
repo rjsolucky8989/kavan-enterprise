@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import ImageMagnifier from "../common/ImageMagnifier";
 
 export const DiyaMakingMachine = () => {
   return (
@@ -9,10 +10,9 @@ export const DiyaMakingMachine = () => {
           <div className="col-span-12 lg:col-span-12 relative">
             <div className="grid grid-cols-12 gap-6">
               <div className="col-span-12 lg:col-span-6">
-                <img
-                  src="/diya-making-machine-1.jpeg"
-                  alt="Diya making machine"
+                <ImageMagnifier
                   width={500}
+                  src="/diya-making-machine-1.jpeg"
                   height={500}
                 />
               </div>
