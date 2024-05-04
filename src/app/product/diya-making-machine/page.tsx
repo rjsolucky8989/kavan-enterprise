@@ -1,24 +1,18 @@
-"use client";
-import { Footer } from "@/components/common/Footer";
-import { Header } from "@/components/common/Header";
-import Head from "next/head";
+import { Footer } from "@/app/components/common/Footer";
+import { Header } from "@/app/components/common/Header";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Diya Making Machine | Kavan Enterprise",
+  description:
+    "Discover top-quality Diya making machines from a trusted seller. Shop now for all your Diya machine needs!",
+  robots: "index, follow",
+};
 
 const DiyaMakingMachine = () => {
   return (
     <>
-      <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Diya Making Machine | Kavan Enterprise</title>
-        <meta
-          name="description"
-          content="Discover top-quality Diya making machines from a trusted seller. Shop now for all your Diya machine needs!"
-        />
-        <meta name="author" content="Kavan Parmar" />
-        <meta name="copyright" content="kavanenterprise" />
-        <meta name="robots" content="index, follow" />
-      </Head>
       <Header></Header>
+      <h1>Diya Making Machine</h1>
 
       <Footer />
     </>

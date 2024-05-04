@@ -1,6 +1,6 @@
 "use client";
-import { Footer } from "@/components/common/Footer";
-import { Header } from "@/components/common/Header";
+import { Footer } from "@/app/components/common/Footer";
+import { Header } from "@/app/components/common/Header";
 
 export default function Home() {
   return (
