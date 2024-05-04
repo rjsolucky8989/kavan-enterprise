@@ -2,11 +2,13 @@
 import { Footer } from "@/components/common/Footer";
 import { Header } from "@/components/common/Header";
 
-export default function Home() {
+const DiyaMakingMachine = () => {
   return (
     <>
-      <Header />
+      <Header></Header>
       <Footer />
     </>
   );
-}
+};
+
+export default DiyaMakingMachine;
