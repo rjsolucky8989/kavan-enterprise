@@ -56,6 +56,7 @@ const ImageMagnifier: React.FC<{
       />
 
       <div
+        className="invisible md:visible"
         style={{
           display: showMagnifier ? "" : "none",
           position: "absolute",
