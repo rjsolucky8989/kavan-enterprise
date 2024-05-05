@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Premium Diya & Mitti Diya Shop | Kavan Enterprise",
   description:
-  "Discover the beauty of tradition with our exquisite collection of Diya & Mitti Diya. Handcrafted with care and made from eco-friendly materials, our Diya & Mitti Diya add warmth and charm to any occasion. Shop now for the perfect blend of tradition and elegance.",
+  "Discover exquisite Diya & Mitti Diyas. Handcrafted with love, perfect for festive occasions. Illuminate your home with warmth and joy!",
   robots: "index, follow",
   keywords: [
     "Diya",

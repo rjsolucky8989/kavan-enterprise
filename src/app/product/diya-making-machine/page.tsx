@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Premium Diya Making Machines Shop | Kavan Enterprise",
   description:
-    "Ignite Your Creativity: Unleash the power of innovation with our cutting-edge Diya Making Machine. Engineered for excellence and crafted with precision, our machines revolutionize the Diya-making process. Explore our range today and embark on a journey of limitless possibilities in Diya production!",
+    "Revolutionize Diya production with our advanced machines. Precision, speed, and quality in every mold. Elevate your craft today!",
   robots: "index, follow",
   keywords: [
     "Diya Making Machine",
