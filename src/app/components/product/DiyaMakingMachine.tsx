@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import ImageMagnifier from "../common/ImageMagnifier";
 
 export const DiyaMakingMachine = () => {
@@ -107,7 +106,6 @@ export const DiyaMakingMachine = () => {
                             <td className="px-6 py-4 text-start w-1/4 opacity-75 bg-gray-100 bg-opacity-80 dark:bg-slate-700 dark:bg-opacity-20">
                             Material
                             </td>
-
                             <th className="py-4 text-start pl-2 md:pl-8">
                             Iron
                             </th>
