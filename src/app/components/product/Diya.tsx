@@ -388,7 +388,6 @@ const Diya = () => {
   };
 
   return (
-    <>
     <section className="py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-12 gap-6">
@@ -535,7 +534,6 @@ const Diya = () => {
         </div>
       </div>
     </section>
-    </>
   );
 };
 
