@@ -1,4 +1,3 @@
-"use client";
 import { Footer } from "@/app/components/common/Footer";
 import { Header } from "@/app/components/common/Header";
 import { Metadata } from "next";
