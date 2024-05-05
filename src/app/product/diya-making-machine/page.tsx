@@ -4,7 +4,7 @@ import { DiyaMakingMachine } from "@/app/components/product/DiyaMakingMachine";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Illuminate Your Production: Premium Diya Making Machines Shop | Kavan Enterprise",
+  title: "Premium Diya Making Machines Shop | Kavan Enterprise",
   description:
     "Ignite Your Creativity: Unleash the power of innovation with our cutting-edge Diya Making Machine. Engineered for excellence and crafted with precision, our machines revolutionize the Diya-making process. Explore our range today and embark on a journey of limitless possibilities in Diya production!",
   robots: "index, follow",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://kavanenterprise.com/product/diya-making-machine",
-    title: "Illuminate Your Production: Premium Diya Making Machines Shop | Kavan Enterprise",
+    title: "Premium Diya Making Machines Shop | Kavan Enterprise",
     description:
       "Multi Purpose Manual Diya Making Machine is very useful to make Diyas. By using Different Die (Mold) it can Produce : Deepak/Diya, Kullad, Kitkat fuse, Ceramic foundry filters etc.",
     siteName: "Diya Making Machine | Kavan Enterprise",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
 
     description:
       "Multi Purpose Manual Diya Making Machine is very useful to make Diyas. By using Different Die (Mold) it can Produce : Deepak/Diya, Kullad, Kitkat fuse, Ceramic foundry filters etc.",
-    title: "Illuminate Your Production: Premium Diya Making Machines Shop | Kavan Enterprise",
+    title: "Premium Diya Making Machines Shop | Kavan Enterprise",
     images: "https://kavanenterprise.com/diya-making-machine-1.jpeg",
   },
 };
