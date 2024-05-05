@@ -4,7 +4,7 @@ import { Header } from "@/app/components/common/Header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Elevate Your Festivities: Premium Diya & Mitti Diya Shop | Kavan Enterprise",
+  title: "Premium Diya & Mitti Diya Shop | Kavan Enterprise",
   description:
   "Discover the beauty of tradition with our exquisite collection of Diya & Mitti Diya. Handcrafted with care and made from eco-friendly materials, our Diya & Mitti Diya add warmth and charm to any occasion. Shop now for the perfect blend of tradition and elegance.",
   robots: "index, follow",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://kavanenterprise.com/product/diya",
-    title: "Elevate Your Festivities: Premium Diya & Mitti Diya Shop | Kavan Enterprise",
+    title: "Premium Diya & Mitti Diya Shop | Kavan Enterprise",
     description:
     "Illuminate Your Celebrations: Explore our premium Diya & Mitti Diya collection and add a touch of elegance to your festivities. Handcrafted with love and crafted from eco-conscious materials, our Diya & Mitti Diya bring the essence of tradition to life. Shop now and light up your celebrations in style!",
     siteName: "Shop the Finest Diya & Mitti Diya Collection: Traditional, Handmade, and Eco-friendly | Kavan Enterprise",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
 
     description:
     "Illuminate Your Celebrations: Explore our premium Diya & Mitti Diya collection and add a touch of elegance to your festivities. Handcrafted with love and crafted from eco-conscious materials, our Diya & Mitti Diya bring the essence of tradition to life. Shop now and light up your celebrations in style!",
-    title: "Elevate Your Festivities: Premium Diya & Mitti Diya Shop | Kavan Enterprise",
+    title: "Premium Diya & Mitti Diya Shop | Kavan Enterprise",
     images: "https://cdn.easyfrontend.com/pictures/products/aroma1.jpg",
   },
 };
