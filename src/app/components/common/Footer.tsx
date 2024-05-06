@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     // className="h-8" viewBox="0 0 118 24" fill="none"
     <footer className="bg-[#023047]">
-      <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+      <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-teal-600 sm:justify-start">
@@ -19,8 +19,8 @@ export const Footer = () => {
               />
             </div>
 
-            <p className="mt-6 max-w-md text-center leading-relaxed text-[#219EBC] sm:max-w-xs sm:text-left">
-              Diya Making Machine
+            <p className="mt-2 max-w-md text-center leading-relaxed text-[#219EBC] sm:max-w-xs sm:text-left">
+            Discover the epitome of Diyas, futuristic Diya making machines, and exquisite Ceramic delights. Revolutionize your Festivities now!
             </p>
 
             <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">

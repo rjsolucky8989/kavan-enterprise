@@ -1,5 +1,50 @@
 /* eslint-disable @next/next/no-img-element */
+'use client';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 import ImageMagnifier from "../common/ImageMagnifier";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faShareAlt,
+  faStar,
+  faStarHalfAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faStar as farStar,
+  faHeart,
+} from "@fortawesome/free-regular-svg-icons";
+
+const product = {
+  rating: 4.5,
+  rateCount: 10,
+  orders: 19,
+  price: 6638.89,
+  oldPrice: 24589.27,
+  mark: "-73%",
+};
+
+const Rating: React.FC<any> = ({ rating }) => (
+  <Fragment>
+    <span className="text-sm text-red-500">
+      {[...Array(5)].map((_, i) => {
+        const index = i + 1;
+        let content: any = "";
+        if (index <= Math.floor(rating))
+          content = <FontAwesomeIcon icon={faStar} />;
+        else if (rating > i && rating < index + 1)
+          content = <FontAwesomeIcon icon={faStarHalfAlt} />;
+        else if (index > rating) content = <FontAwesomeIcon icon={farStar} />;
+
+        return <Fragment key={i}>{content}</Fragment>;
+      })}
+    </span>
+    <span className="mx-1">{rating.toFixed(1)}</span>
+  </Fragment>
+);
+
+Rating.propTypes = {
+  rating: PropTypes.number,
+};
 
 export const DiyaMakingMachine = () => {
   return (
@@ -21,6 +66,43 @@ export const DiyaMakingMachine = () => {
                 Diya Making Machine
                   </h1>
                 </div>
+                <div className="flex items-center">
+                    <div className="flex-grow">
+                      <p className="inline font-light mb-4">
+                        <Rating rating={product.rating} />
+                        <a
+                          href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
+                          className="text-sm text-[#219EBC] hover:underline font-medium"
+                        >
+                          {product.rateCount} Reviews
+                        </a>
+                      </p>
+                      <p className="mb-0">
+                        Brand:{" "}
+                        <a
+                          href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
+                          className="text-sm text-[#219EBC] hover:underline font-medium"
+                        >
+                          Kavan Enterprise
+                        </a>{" "}
+                        <span className="mx-1 opacity-50">|</span>
+                        <a
+                          href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
+                          className="text-sm text-[#219EBC] hover:underline font-medium"
+                        >
+                          More Mobile Accessories from No Brand
+                        </a>
+                      </p>
+                    </div>
+                    <div className="ml-auto">
+                      <button className="hover:bg-[#023047] rounded hover:bg-opacity-10 text-[#219EBC] px-3 py-2 text-lg font-bold">
+                        <FontAwesomeIcon icon={faHeart} />
+                      </button>
+                      <button className="hover:bg-[#023047] rounded hover:bg-opacity-10 text-[#219EBC] px-3 py-2 text-lg font-bold">
+                        <FontAwesomeIcon icon={faShareAlt} />
+                      </button>
+                    </div>
+                  </div>
                 <hr className="dark:border-slate-700 my-6" />
                 <div>
                   <h2 className="text-start leading-tight font-medium">
@@ -125,8 +207,9 @@ export const DiyaMakingMachine = () => {
                   </h2>
                 </div>
                 <div className="flex gap-3 items-center my-7">
-                    <button className="border text-lg font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20">
-                      Get Best Price
+                    <button className="border font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20">
+                      Get Best Price <br />
+                      <span className="text-sm font-normal">Request a Quote</span>
                     </button>
                   </div>
               </div>

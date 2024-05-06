@@ -417,7 +417,7 @@ const Diya = () => {
                           href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
                           className="text-sm text-[#219EBC] hover:underline font-medium"
                         >
-                          No Brand
+                          Kavan Enterprice
                         </a>{" "}
                         <span className="mx-1 opacity-50">|</span>
                         <a
@@ -512,8 +512,9 @@ const Diya = () => {
                     </span>
                   </p>
                   <div className="flex gap-3 items-center my-7">
-                    <button className="border text-lg font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20">
-                      Get Best Price
+                  <button className="border font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20">
+                      Get Best Price <br />
+                      <span className="text-sm font-normal">Request a Quote</span>
                     </button>
                   </div>
                 </form>
