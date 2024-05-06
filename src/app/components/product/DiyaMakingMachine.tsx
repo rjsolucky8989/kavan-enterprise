@@ -30,14 +30,14 @@ export const DiyaMakingMachine = () => {
                     etc.
                   </h2>
                 </div>
-                <section className="ezy__epspecification3 light py-4 md:py-14 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
+                <section className="body ezy__epspecification3 light py-4 md:py-14 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
                   <div className="container px-4 mx-auto">
                     <div className="flex flex-col max-w-3xl justify-center mx-auto">
                       <h5 className="text-2xl font-bold leading-none mb-8">
                         Product Specification
                       </h5>
 
-                      <table>
+                      <table className="bg-[#ccdbdc]">
                         <tbody>
                           <tr className="border-b dark:border-slate-700 mt-2">
                             <td className="px-6 py-4 text-start w-1/4 opacity-75 bg-gray-100 bg-opacity-80 dark:bg-slate-700 dark:bg-opacity-20">
