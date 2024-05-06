@@ -294,7 +294,7 @@ Coupons.propTypes = {
 };
 
 const Sidebar = () => (
-  <div className="bg-gray-100 dark:bg-slate-800">
+  <div className="bg-[#ccdbdc] dark:bg-slate-800">
     <div className="p-4">
       <p className="text-sm opacity-50 flex justify-between mb-4">
         <b>Delivery</b>{" "}
