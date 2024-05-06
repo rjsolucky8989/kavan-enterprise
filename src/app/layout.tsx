@@ -7,9 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kavan Enterprise",
+  title: "Illuminate Life: Diyas, Machines & More | Kavan Enterprise",
   description:
-    "We are a reputed entity, engaged in offering a qualitative array of Heavy Duty Toggle Press Machine.Keeping in mind ever-evolving requirements of our respected clients, we are providing a premium quality range of Clay Diya Making Machine.",
+    "Discover the epitome of Diyas, futuristic Diya making machines, and exquisite ceramic delights. Revolutionize your festivities now!",
   robots: "index, follow",
   keywords: [
     "Diya Making Machine",
@@ -74,16 +74,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://kavanenterprise.com",
-    title: "Kavan Enterprise",
+    title: "Illuminate Life: Diyas, Machines & More | Kavan Enterprise",
     description:
-      "We are a reputed entity, engaged in offering a qualitative array of Heavy Duty Toggle Press Machine.Keeping in mind ever-evolving requirements of our respected clients, we are providing a premium quality range of Clay Diya Making Machine.",
+      "Discover the epitome of Diyas, futuristic Diya making machines, and exquisite ceramic delights. Revolutionize your festivities now!",
     siteName: "Kavan Enterprise",
   },
   twitter: {
     site: "https://kavanenterprise.com",
     description:
-      "We are a reputed entity, engaged in offering a qualitative array of Heavy Duty Toggle Press Machine.Keeping in mind ever-evolving requirements of our respected clients, we are providing a premium quality range of Clay Diya Making Machine.",
-    title: "Kavan Enterprise",
+      "Discover the epitome of Diyas, futuristic Diya making machines, and exquisite ceramic delights. Revolutionize your festivities now!",
+    title: "Illuminate Life: Diyas, Machines & More | Kavan Enterprise",
   },
 };
 
