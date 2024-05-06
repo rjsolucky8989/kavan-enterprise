@@ -6,7 +6,7 @@ import React from "react";
 export const Footer = () => {
   return (
     // className="h-8" viewBox="0 0 118 24" fill="none"
-    <footer className="bg-[#F0F3F5]">
+    <footer className="bg-[#023047]">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -19,7 +19,7 @@ export const Footer = () => {
               />
             </div>
 
-            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+            <p className="mt-6 max-w-md text-center leading-relaxed text-[#219EBC] sm:max-w-xs sm:text-left">
               Diya Making Machine
             </p>
 
@@ -29,7 +29,7 @@ export const Footer = () => {
                   href="https://facebook.com"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75"
+                  className="text-[#219EBC] transition hover:text-[#8ECAE6]"
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
@@ -52,7 +52,7 @@ export const Footer = () => {
                   href="https://instagram.com"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75"
+                  className="text-[#219EBC] transition hover:text-[#8ECAE6]"
                 >
                   <span className="sr-only">Instagram</span>
                   <svg
@@ -75,7 +75,7 @@ export const Footer = () => {
                   href="https://twitter.com"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75"
+                  className="text-[#219EBC] transition hover:text-[#8ECAE6]"
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
@@ -93,12 +93,12 @@ export const Footer = () => {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">About Us</p>
+              <p className="text-lg font-medium text-[#219EBC]">About Us</p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
+                    className="text-[#219EBC] transition hover:text-[#8ECAE6]"
                     href="#"
                   >
                     Company History
@@ -108,12 +108,12 @@ export const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Our Products</p>
+              <p className="text-lg font-medium text-[#219EBC]">Our Products</p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <Link
-                    className="text-gray-700 transition hover:text-gray-700/75"
+                    className="text-[#219EBC] transition hover:text-[#8ECAE6]"
                     href="/product/diya-making-machine"
                     rel="canonical"
                   >
@@ -122,7 +122,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className="text-gray-700 transition hover:text-gray-700/75"
+                    className="text-[#219EBC] transition hover:text-[#8ECAE6]"
                     href="/product/diya"
                     rel="canonical"
                   >
@@ -133,7 +133,7 @@ export const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Contact Us</p>
+              <p className="text-lg font-medium text-[#219EBC]">Contact Us</p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
@@ -143,7 +143,7 @@ export const Footer = () => {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="size-5 shrink-0 text-gray-900"
+                      className="size-5 shrink-0 text-[#219EBC]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -156,7 +156,7 @@ export const Footer = () => {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-700">john@doe.com</span>
+                    <span className="flex-1 text-[#219EBC]">john@doe.com</span>
                   </a>
                 </li>
 
@@ -167,7 +167,7 @@ export const Footer = () => {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="size-5 shrink-0 text-gray-900"
+                      className="size-5 shrink-0 text-[#219EBC]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -180,14 +180,14 @@ export const Footer = () => {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-700">0123456789</span>
+                    <span className="flex-1 text-[#219EBC]">0123456789</span>
                   </a>
                 </li>
 
                 <li className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="size-5 shrink-0 text-gray-900"
+                    className="size-5 shrink-0 text-[#219EBC]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -205,7 +205,7 @@ export const Footer = () => {
                     />
                   </svg>
 
-                  <address className="-mt-0.5 flex-1 not-italic text-gray-700">
+                  <address className="-mt-0.5 flex-1 not-italic text-[#219EBC]">
                     213 Lane, London, United Kingdom
                   </address>
                 </li>
@@ -214,13 +214,13 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-100 pt-6">
+        <div className="mt-12 border-t border-[#8ECAE6] pt-6">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
-            <p className="text-sm text-gray-500">
-              <span className="block sm:inline">All rights reserved.</span>
+            <p className="text-sm text-[#219EBC]">
+              <span className="block sm:inline">All rights reserved. </span>
 
               <a
-                className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                className="inline-block text-[#219EBC] underline transition hover:text-[#8ECAE6]"
                 href="#"
               >
                 Terms & Conditions
@@ -229,15 +229,15 @@ export const Footer = () => {
               <span>&middot;</span>
 
               <a
-                className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                className="inline-block text-[#219EBC] underline transition hover:text-[#8ECAE6]"
                 href="#"
               >
                 Privacy Policy
               </a>
             </p>
 
-            <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-              &copy; 2024 Kavan Enterprise
+            <p className="mt-4 text-[#219EBC] text-sm sm:order-first sm:mt-0">
+              &copy; 2024 <a className="text-[#219EBC] transition hover:text-[#8ECAE6] " href="http://kavanenterprise.com"> Kavan Enterprise </a>
             </p>
           </div>
         </div>

@@ -22,14 +22,14 @@ export function Header() {
     },
   ];
   return (
-    <nav className="w-full light py-3 bg-[#F0F3F5] text-zinc-900 dark:text-white relative ">
+    <nav className="w-full light py-3 bg-[#023047] text-zinc-900 dark:text-white relative ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Image src={"/logo.png"} width={150} height={0} alt="Logo" />
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none "
+                className="p-2 text-[#219EBC] rounded-md outline-none "
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -71,7 +71,7 @@ export function Header() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul className="items-center text-[#8ECAE6] justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {routes.map((route) => {
                 return (
                   <li
