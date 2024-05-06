@@ -213,21 +213,21 @@ const QtyField: React.FC<any> = ({ name, value, onChange }) => {
   return (
     <div className="flex items-center">
       <button
-        className="w-8 h-8 bg-gray-100 dark:bg-slate-800 bg-opacity-50 hover:bg-opacity-100 dark:bg-opacity-50 dark:hover:bg-opacity-100 text-blue-600 leading-none flex justify-center items-center rounded-lg font-bold"
+        className="w-8 h-8 bg-gray-100 dark:bg-slate-800 bg-opacity-50 hover:bg-opacity-100 dark:bg-opacity-50 dark:hover:bg-opacity-100 text-[#023047] leading-none flex justify-center items-center rounded-lg font-bold"
         type="button"
         onClick={() => qtyControl(parseInt(value) - 1)}
       >
         -
       </button>
       <input
-        type="number"
+        type="text"
         className="bg-transparent text-center pl-3 font-bold w-12"
         placeholder=""
         value={value}
         onChange={(e) => qtyControl(e.target.value)}
       />
       <button
-        className="w-8 h-8 bg-gray-100 dark:bg-slate-800 bg-opacity-50 hover:bg-opacity-100 dark:bg-opacity-50 dark:hover:bg-opacity-100 text-blue-600 leading-none flex justify-center items-center rounded-lg font-bold"
+        className="w-8 h-8 bg-gray-100 dark:bg-slate-800 bg-opacity-50 hover:bg-opacity-100 dark:bg-opacity-50 dark:hover:bg-opacity-100 text-[#023047] leading-none flex justify-center items-center rounded-lg font-bold"
         type="button"
         onClick={() => qtyControl(parseInt(value) + 1)}
       >
@@ -282,7 +282,7 @@ const Coupons: React.FC<any> = ({ coupons }) => (
     ))}
     <a
       href="src/components/bootstrap/categories/epOverview/EPOverview8#!"
-      className="text-blue-600 hover:underline text-sm font-medium inline-block mr-1 mt-1"
+      className="text-[#219EBC] hover:underline text-sm font-medium inline-block mr-1 mt-1"
     >
       Get coupons
     </a>
@@ -396,7 +396,7 @@ const Diya = () => {
               </div>
               <div className="col-span-12 lg:col-span-7">
                 <div>
-                  <h1 className="text-2xl leading-tight font-medium mb-4">
+                  <h1 className="text-2xl leading-tight font-bold mb-4">
                     {product.title}
                   </h1>
 
@@ -406,7 +406,7 @@ const Diya = () => {
                         <Rating rating={product.rating} />
                         <a
                           href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
-                          className="text-sm text-blue-600 hover:underline font-medium"
+                          className="text-sm text-[#219EBC] hover:underline font-medium"
                         >
                           {product.rateCount} Reviews
                         </a>
@@ -415,30 +415,30 @@ const Diya = () => {
                         Brand:{" "}
                         <a
                           href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
-                          className="text-sm text-blue-600 hover:underline font-medium"
+                          className="text-sm text-[#219EBC] hover:underline font-medium"
                         >
                           No Brand
                         </a>{" "}
                         <span className="mx-1 opacity-50">|</span>
                         <a
                           href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
-                          className="text-sm text-blue-600 hover:underline font-medium"
+                          className="text-sm text-[#219EBC] hover:underline font-medium"
                         >
                           More Mobile Accessories from No Brand
                         </a>
                       </p>
                     </div>
                     <div className="ml-auto">
-                      <button className="hover:bg-blue-600 rounded hover:bg-opacity-10 text-blue-600 px-3 py-2 text-lg font-bold">
+                      <button className="hover:bg-[#023047] rounded hover:bg-opacity-10 text-[#219EBC] px-3 py-2 text-lg font-bold">
                         <FontAwesomeIcon icon={faHeart} />
                       </button>
-                      <button className="hover:bg-blue-600 rounded hover:bg-opacity-10 text-blue-600 px-3 py-2 text-lg font-bold">
+                      <button className="hover:bg-[#023047] rounded hover:bg-opacity-10 text-[#219EBC] px-3 py-2 text-lg font-bold">
                         <FontAwesomeIcon icon={faShareAlt} />
                       </button>
                     </div>
                   </div>
                   <div className="mb-0 mt-6">
-                    <span className="text-blue-600 text-2xl font-bold mr-2">
+                    <span className="text-black-600 text-2xl font-bold mr-2">
                       {product.price.toLocaleString("en-IN", {
                         style: "currency",
                         currency: "INR",
@@ -497,7 +497,7 @@ const Diya = () => {
                   <p className="text-sm mb-3">
                     <span className="opacity-75">Ships to</span>
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mx-1" />
-                    <a href="#!" className="text-blue-600 hover:underline">
+                    <a href="#!" className="text-[#219EBC] hover:underline">
                       Bangladesh
                     </a>
                   </p>
@@ -512,11 +512,8 @@ const Diya = () => {
                     </span>
                   </p>
                   <div className="flex gap-3 items-center my-7">
-                    <button className="bg-blue-600 border border-blue-600 text-white text-sm rounded uppercase hover:bg-opacity-90 px-10 py-2.5 h-10 md:px-12 w-full sm:w-1/2">
-                      Buy Now
-                    </button>
-                    <button className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-sm rounded uppercase px-6 py-2.5 h-10 md:px-12 w-full sm:w-1/2">
-                      Add To Cart
+                    <button className="border text-lg font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20">
+                      Get Best Price
                     </button>
                   </div>
                 </form>

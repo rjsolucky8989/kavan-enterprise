@@ -124,6 +124,11 @@ export const DiyaMakingMachine = () => {
                     Machine.
                   </h2>
                 </div>
+                <div className="flex gap-3 items-center my-7">
+                    <button className="border text-lg font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20">
+                      Get Best Price
+                    </button>
+                  </div>
               </div>
             </div>
           </div>
