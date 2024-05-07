@@ -13,6 +13,7 @@ import {
   faStar as farStar,
   faHeart,
 } from "@fortawesome/free-regular-svg-icons";
+import InquiryDialog from "../common/InquiryDialog";
 
 const product = {
   rating: 4.5,
@@ -47,7 +48,9 @@ Rating.propTypes = {
 };
 
 export const DiyaMakingMachine = () => {
+  const [open, setOpen] = React.useState(false);
   return (
+    <>
     <section className="body py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-12 gap-6">
@@ -207,7 +210,7 @@ export const DiyaMakingMachine = () => {
                   </h2>
                 </div>
                 <div className="flex gap-3 items-center my-7">
-                    <button className="border font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20">
+                    <button className="border font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20" onClick={()=>setOpen(true)}>
                       Get Best Price <br />
                       <span className="text-sm font-normal">Request a Quote</span>
                     </button>
@@ -218,5 +221,7 @@ export const DiyaMakingMachine = () => {
         </div>
       </div>
     </section>
+    <InquiryDialog open={open} setOpen={setOpen} />
+    </>
   );
 };

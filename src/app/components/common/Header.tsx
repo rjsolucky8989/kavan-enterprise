@@ -22,7 +22,7 @@ export function Header() {
     },
   ];
   return (
-    <nav className="w-full light bg-[#023047] text-zinc-900 dark:text-white relative ">
+    <nav className="w-full light bg-[#023047] py-3 text-zinc-900 dark:text-white relative ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between md:block">

@@ -20,6 +20,7 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import { Table } from "@mui/material";
 import ImageMagnifier from "@/app/components/common/ImageMagnifier";
+import InquiryDialog from "@/app/components/common/InquiryDialog";
 
 const coupons = [{ label: "Min. spend ₹ 5,000. Capped at ₹ 1,250." }];
 
@@ -385,7 +386,10 @@ const Diya = () => {
     });
   };
 
+  const [open, setOpen] = React.useState(false);
+
   return (
+    <>
     <section className="body py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-12 gap-6">
@@ -411,21 +415,14 @@ const Diya = () => {
                           {product.rateCount} Reviews
                         </a>
                       </p>
-                      <p className="mb-0">
+                      <p className="mt-1">
                         Brand:{" "}
                         <a
-                          href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
+                          href="http://kavanenterprise.com"
                           className="text-sm text-[#219EBC] hover:underline font-medium"
                         >
                           Kavan Enterprice
                         </a>{" "}
-                        <span className="mx-1 opacity-50">|</span>
-                        <a
-                          href="src/components/bootstrap/categories/epOverview/EPOverview9#!"
-                          className="text-sm text-[#219EBC] hover:underline font-medium"
-                        >
-                          More Mobile Accessories from No Brand
-                        </a>
                       </p>
                     </div>
                     <div className="ml-auto">
@@ -511,8 +508,8 @@ const Diya = () => {
                       Estimated delivery: 7-15 days
                     </span>
                   </p>
-                  <div className="flex gap-3 items-center my-7">
-                  <button className="border font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20">
+                  <div className="flex items-center my-7">
+                  <button className="border font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20" onClick={()=>setOpen(true)}>
                       Get Best Price <br />
                       <span className="text-sm font-normal">Request a Quote</span>
                     </button>
@@ -530,6 +527,8 @@ const Diya = () => {
         </div>
       </div>
     </section>
+    <InquiryDialog open={open} setOpen={setOpen} />
+    </>
   );
 };
 

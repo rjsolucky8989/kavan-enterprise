@@ -139,7 +139,7 @@ export const Footer = () => {
                 <li>
                   <a
                     className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="/contact-us"
+                    href="mailto: solanki.rushi81@gmail.com"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -156,14 +156,14 @@ export const Footer = () => {
                       />
                     </svg>
 
-                    <span className="flex-1 text-[#219EBC]">john@doe.com</span>
+                    <span className="flex-1 text-[#219EBC] transition hover:text-[#8ECAE6]">john@doe.com</span>
                   </a>
                 </li>
 
                 <li>
                   <a
                     className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="#"
+                    href="tel: +917043089899"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ export const Footer = () => {
                       />
                     </svg>
 
-                    <span className="flex-1 text-[#219EBC]">0123456789</span>
+                    <span className="flex-1 text-[#219EBC] transition hover:text-[#8ECAE6]">0123456789</span>
                   </a>
                 </li>
 
