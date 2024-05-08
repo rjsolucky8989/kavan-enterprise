@@ -509,7 +509,7 @@ const Diya = () => {
                     </span>
                   </p>
                   <div className="flex items-center my-7">
-                  <button className="border font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20" onClick={()=>setOpen(true)}>
+                  <button type="button" className="border font-extrabold border-[#FB8500] bg-[#FB8500] text-white hover:bg-[#EFF7F6] hover:text-[#FB8500] text-lg rounded uppercase px-6 py-2.5 md:px-12 w-full h-20" onClick={()=>setOpen(true)}>
                       Get Best Price <br />
                       <span className="text-sm font-normal">Request a Quote</span>
                     </button>

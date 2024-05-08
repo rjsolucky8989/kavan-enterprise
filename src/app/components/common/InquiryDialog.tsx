@@ -1,14 +1,13 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
-import "react-phone-number-input/style.css";
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 export default function InquiryDialog({ open, setOpen }) {
   const handleClose = () => {
@@ -40,14 +39,14 @@ export default function InquiryDialog({ open, setOpen }) {
         </DialogContentText>
         <PhoneInput
           placeholder="Enter phone number"
-          defaultCountry="IN"
+          country="in"
           value={value}
           onChange={setValue}
         />
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose}>Cancel</Button>
-        <Button type="submit">Subscribe</Button>
+        <Button type="submit">Submit</Button>
       </DialogActions>
     </Dialog>
   );
